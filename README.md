@@ -25,11 +25,11 @@ brownie run scripts/deploy.py --network development
 To deploy on a testnet, get your keys for that testnet and the project id from infura.io.
 
 For example Goerli testnet:
-´´´
+```
 $export PUBLIC_KEY="your_public_key"
 $export PRIVATE_KEY="your_private_key"
 $export WEB3_INFURA_PROJECT_ID="your_infura_project_id"
-´´´
-´´´
+```
+```
 $brownie run scripts/deploy.py --network goerli
-´´´
+```
