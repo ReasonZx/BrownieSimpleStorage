@@ -24,12 +24,13 @@ brownie run scripts/deploy.py --network development
 ## Testnet
 To deploy on a testnet, get your keys for that testnet and the project id from infura.io.
 
-For example Goerli testnet:
+For example Sepolia testnet:
 ```
 $export PUBLIC_KEY="your_public_key"
 $export PRIVATE_KEY="your_private_key"
 $export WEB3_INFURA_PROJECT_ID="your_infura_project_id"
+$brownie networks add Ethereum sepolia host="https://sepolia.infura.io/v3/your_infura_project_id" chainid=11155111
 ```
 ```
-$brownie run scripts/deploy.py --network goerli
+$brownie run scripts/deploy.py --network Sepolia
 ```
